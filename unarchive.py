@@ -27,6 +27,11 @@ BAR_FORMAT = "{l_bar}{bar} | {n_fmt}/{total_fmt} [{elapsed}<{remaining}]"
 LOG_RE_PATTERN = r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}.\d{3} - (?:INFO|WARNING) - Object '(.*?)'.*\(index=(\d+?)\).*"
 
 
+variable_name = 'COS_ENDPOINT'
+COS_ENDPOINT = os.getenv(variable_name)
+
+
+
 class Status:
     error = 0
     restored = 0
